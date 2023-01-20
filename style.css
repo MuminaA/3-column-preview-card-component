@@ -106,7 +106,6 @@ img {
     line-height: 25px;
     padding-bottom: 45px;
 }
-
 button {
     border-radius: 20px;
     padding: 13px 30px;
@@ -132,4 +131,17 @@ a {
 .new-line:after {
     content: '\A';
     white-space: pre;
+}
+
+button:hover {
+    cursor: pointer;
+    background: transparent;
+    border: .2em solid white;
+    border-radius: 25px;
+    margin: -1px;
+    color: white;
+}
+
+@media (min-width: 375px) {
+    
 }
