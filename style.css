@@ -31,6 +31,105 @@ img {
     max-width: 100%;
 }
 
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    padding-bottom: 25px;
+}
+
 p {
     overflow-wrap: break-word;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Transparent-white);
+    padding-bottom: 40px;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--Very-light-gray);
+    font-size: 1em;
+}
+
+#grid-items {
+    display: grid;
+    grid-template-columns: repeat(5, 320px);
+    grid-template-rows: repeat(3, 500px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.sedan-row {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suv-row {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: var(--Dark-cyan);
+}
+
+.luxury-row {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+}
+
+.sedan-content {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.suv-content {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.luxury-content {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+img {
+    padding-bottom: 40px;
+}
+
+.description {
+    line-height: 25px;
+    padding-bottom: 45px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 13px 30px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sedan-more {
+    color: var(--Bright-orange);
+}
+
+.suv-more {
+    color: var(--Dark-cyan);
+}
+
+.luxury-more {
+    color: var(--Very-dark-cyan);
+}
+
+.new-line:after {
+    content: '\A';
+    white-space: pre;
 }
