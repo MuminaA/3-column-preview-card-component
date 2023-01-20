@@ -29,6 +29,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    padding-bottom: 40px;
 }
 
 h1 {
@@ -98,10 +99,6 @@ body {
     padding-right: 50px;
 }
 
-img {
-    padding-bottom: 40px;
-}
-
 .description {
     line-height: 25px;
     padding-bottom: 45px;
@@ -142,6 +139,76 @@ button:hover {
     color: white;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
+    #grid-items {
+        display: grid;
+        grid-template-columns: repeat(5, 320px);
+        grid-template-rows: repeat(5, 400px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .sedan-row {
+        grid-area: 2 / 3 / 2 / 3;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
     
+    .suv-row {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+    
+    .luxury-row {
+        grid-area: 4 / 3 / 5 / 4;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .sedan-content {
+        padding-top: 35px;
+        padding-left: 35px;
+        padding-right: 40px;
+    }
+    
+    .suv-content {
+        padding-top: 35px;
+        padding-left: 35px;
+        padding-right: 40px;
+    }
+    
+    .luxury-content {
+        padding-top: 35px;
+        padding-left: 35px;
+        padding-right: 40px;
+    }
+
+    img {
+        block-size: 55px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        padding-bottom: 20px;
+        font-size: 2.2em;
+    }
+    
+    p {
+        padding-bottom: 0;
+        font-size:  .9em;
+    }
+    
+    .description {
+        padding-bottom: 25px;
+    }
+    
+    .new-line::after {
+        white-space: normal;
+    }
+
+    .new-line-mobile::before {
+        content: '\A';
+        white-space: pre;
+    }
 }
